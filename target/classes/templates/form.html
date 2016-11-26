@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hypotenuse calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Triangle form</h1>
+    <form action="#" th:action="@{/form}" th:object="${triangle}" method="post">
+        <p>First side: <input type="number" th:field="*{firstSide}" min="0" step="0.01" /></p>
+        <p>Second side: <input type="number" th:field="*{secondSide}" min="0" step="0.01" /></p>
+        <p><input type="submit" value="Calculate hypotenuse" /> <input type="reset" value="Clear" /></p>
+    </form>
+    <form action="#" th:action="@{/version}" method="post">
+        <p><input type="submit" value="Version" /> </p>
+    </form>
+</body>
+</html>
