@@ -1,0 +1,2 @@
+# EUTACapitalTest
+Hypotenuse task
