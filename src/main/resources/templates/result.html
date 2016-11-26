@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hypotenuse calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Hypotenuse result</h1>
+    <p th:text="'First side: ' + ${triangle.firstSide}" />
+    <p th:text="'Second side: ' + ${triangle.secondSide}" />
+     <p th:text="'Hypotenuse = ' + ${hypotenuse}" />
+    <a href="/form">Calculate again</a>
+</body>
+</html>
